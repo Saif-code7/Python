@@ -21,6 +21,11 @@ This repository contains my coding practice, classwork, assignments, and problem
 
 - Sheryians Coding School
 - LeetCode
+  
+## Connect with me
+
+- [LinkedIn](www.linkedin.com/in/saif-ali-980092388)
+- [LeetCode](https://leetcode.com/u/Saif_codes99/)
 
 ## Goal
 
