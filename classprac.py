@@ -3079,10 +3079,113 @@ Output:
 #             temp.append(ch2)
 #     ans[l] = temp
 # print(ans)
-n = 10
-count = 0
-while n >0:
-    print(n)
-    count += 1
-    n = n - 3
-print(f"Total execution: {count}" )
+# n = 10
+# count = 0
+# while n >0:
+#     print(n)
+#     count += 1
+#     n = n - 3
+# print(f"Total execution: {count}" )
+
+# arr = [1,2,3,4,5]
+# n = 5
+# l1 = []
+# l2 = []
+# for i in range(n//2+1):
+    
+#         l1.append(arr[i])
+# for i in range(n//2+1,n):
+#         l2.append(arr[i])
+
+# print(l1)
+# print(l2)
+
+
+# nums = [2,4,1,1,6,5]
+
+# new = [nums[0]]    # 2
+
+# for i in nums: 
+#     if new[-1] != i:      #ab latest element se check krega kee eqaul hai kee nhi agr nhi hai toh append in new list
+#         new.append(i)
+# count = 0
+
+# for i in range(1,len(new)-1):
+#     if new[i-1] <new[i] > new[i+1]:
+#         count += 1
+#     elif new[i-1] >new[i] < new[i+1]:
+#         count += 1
+# print (count)
+        
+
+# class Animal():
+#     a = "Lion"
+#     def hello(self):
+#         print("i am Saif")
+
+#     print("class is initialised")
+
+# # print(Animal.a)
+# # Animal.hello()
+# obj = Animal()
+# obj.hello()
+# print(obj.a)
+
+
+"""class Vehicle():
+    def __init__(self):
+        print("Medinah")
+
+obj = Vehicle()"""
+
+
+# def Factory(material,zips,pockets):
+#     pass
+
+# Factory()
+
+# class Vehicle():
+#     def __init__(self,color,price,fuel_type):
+#         self.color = color
+#         self.price = price
+#         self.fuel_type = fuel_type
+#         print("Muslim")
+#         print(self.color,self.price,self.fuel_type)
+
+# obj = Vehicle("black","1CR","Petrol")
+
+
+# class Factory():
+#     def __init__(self,material,zips,pockets):
+#         self.material = material
+#         self.zips = zips
+#         self.pockets = pockets
+
+#     def details(self):
+#         print(self.material,self.zips,self.pockets)
+
+# hrx = Factory("Leather",2,2)
+# hrx.details()
+
+# d_list = [{'a': 1, 'b': 2}, {'b': 3, 'c': 4}]
+# ans = {}
+# for d in d_list:
+#     for i,j in d.items():
+#         if i in ans:
+#             ans[i] = j
+
+#         else:
+#             ans[i]  = j
+
+# print(ans)
+
+def find_keys_recursive(d):
+    res=[]
+    for key,val in d.items():
+        res.append(key)
+        if type(val)==dict:
+            
+            res+=find_keys_recursive(val)
+        
+    return res   
+print(find_keys_recursive({'a': 1, 'b': {'c': 2, 'd': {'e': 3}}}))

@@ -44,7 +44,7 @@ for i in range(0,3):
 balance = 5000
 if main_menu == True:
     
-    # while main_menu == True:
+    while main_menu == True:
         print("1. Check balance")
         print("2. Deposit cash")
         print("3. withdraw cash")
@@ -66,6 +66,6 @@ if main_menu == True:
                 print("Insufficient balance")
         elif choose == 4:
             print("Thank you for using our ATM. Have a nice day!" )
-            # break
+            break
         else:
             print("Invalid Choice! Please choose 1 - 4.")

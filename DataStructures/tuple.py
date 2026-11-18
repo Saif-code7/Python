@@ -31,24 +31,29 @@ TUPLE
 * - > repetition  # line 37
 """
 
-# t1 = (1,2)
-# t2 = (3,4)
-# print(t1 + t2)
-# print(t1 * 5)
-
+"""t1 = (1,2)
+t2 = (3,4)
+print(t1 + t2)
+print(t1 * 5)
+"""
 
 # add 100 at last
-t = (1,2,[3,4,5])
-# print(t[2].append(100))  # tuple is a class so nhi hoga directly print se
-t[2].append(100)
-print(t)
+"""t = (1,2,[3,4,5])
+"""# print(t[2].append(100))  # tuple is a class so nhi hoga directly print se
+"""t[2].append(100)
+print(t)"""
 
-
+"""
 t = (1,2,3,4,5,6,7,8)
-print(t[1:6])
+print(t[1:6])"""
 
-t = (1,2,3,4,5,6,7,8)
-print(t[::-1])
+"""t = (1,2,3,4,5,6,7,8)
+print(t[::-1])"""
 
 # t = (1,2,3,4,5,6,7,8)
-print((1,2)* 2 + (3,))
+# print((1,2)* 2 + (3,))
+
+# tuple unpacking
+"""a,b,c = (10,20,30)
+print(a) # - > 10
+print(b) # - > 20"""

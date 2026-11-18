@@ -43,43 +43,43 @@ SET OPERATIONS.
 """
 
 
-s1 = {1,2,3,4}
-s2 = {4,5,6,7,8}
-"""# 1,  .union()
-merge both the sets"""
+# s1 = {1,2,3,4}
+# s2 = {4,5,6,7,8}
+# """# 1,  .union()
+# merge both the sets"""
 
-print(f"union-> {s1.union(s2)}")
-print(f"union -> {s1 | s2}") # - same work without using  .union()
+# print(f"union-> {s1.union(s2)}")
+# print(f"union -> {s1 | s2}") # - same work without using  .union()
 
 """
 2. .intersection
 common elements.
 """
 
-s1 = {1,2,3,4}
-s2 = {4,5,6,7,8}
-print(f"intersection-> {s1.intersection(s2)}")
-print(f"intersection -> {s1 & s2}") 
+# s1 = {1,2,3,4}
+# s2 = {4,5,6,7,8}
+# print(f"intersection-> {s1.intersection(s2)}")
+# print(f"intersection -> {s1 & s2}") 
 
 
 """
 3. .difference()
 elements present in one set but not in another
 """
-s1 = {1,2,3,4}
-s2 = {4,5,6,7,8}
-print(f"Difference   {s1.difference(s2)}")
-print(f"Difference   {s2.difference(s1)}")
-print(f"difference -> {s1 - s2}") 
+# s1 = {1,2,3,4}
+# s2 = {4,5,6,7,8}
+# print(f"Difference   {s1.difference(s2)}")
+# print(f"Difference   {s2.difference(s1)}")
+# print(f"difference -> {s1 - s2}") 
 
 """
 4.  .symmetric_difference() 
 """
 
-s1 = {1,2,3,4}
-s2 = {4,5,6,7,8}
-print(f"symmetric - {s1.symmetric_difference(s2)}")
-print(f"symmetric -> {s1 ^ s2}") 
+# s1 = {1,2,3,4}
+# s2 = {4,5,6,7,8}
+# print(f"symmetric - {s1.symmetric_difference(s2)}")
+# print(f"symmetric -> {s1 ^ s2}") 
 
 
 """
@@ -94,6 +94,12 @@ print(f"symmetric -> {s1 ^ s2}")
 frozenset makes any set with of fixed elements 
 we cannot add elements or cannot remove it
 """
-s = frozenset([1,2,3,4,5])   #- list dena padega forzen k lia but wo set hee hai dict se pass nhi kr skte
+"""s = frozenset([1,2,3,4,5])   #- list dena padega forzen k lia but wo set hee hai dict se pass nhi kr skte
 s.add(6)
-print(s)
+print(s)"""
+
+s1 = {1,2,3,4}
+s2 = {1,2}
+if s2.issubset(s1):
+    print("s2 is subset of s1")
+
